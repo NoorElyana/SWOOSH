@@ -1,0 +1,74 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEBF2"
+    tools:context=".MainActivity">
+
+
+    <!-- Profile Icon -->
+    <ImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Profile Icon"
+        android:src="@drawable/ic_profile" />
+
+    <!-- Earnings Icon -->
+    <ImageView
+        android:id="@+id/earningsIcon"
+        android:layout_width="150dp"
+        android:layout_height="91dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Earnings Icon"
+        android:src="@drawable/ic_earnings" />
+
+    <!-- GIF Overlay -->
+    <ImageView
+        android:id="@+id/mapGif"
+        android:layout_width="376dp"
+        android:layout_height="420dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="Map Animation"
+        android:src="@drawable/map_animation" />
+
+    <!-- "You're offline" Text -->
+    <TextView
+        android:id="@+id/offlineText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+    android:text="You're offline."
+    android:textColor="#FF0000"
+    android:textSize="18sp"
+    android:textStyle="bold" />
+
+    <!-- Go Online Button -->
+    <Button
+        android:id="@+id/goOnlineButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#4D4B63"
+        android:text="Go Online"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>
