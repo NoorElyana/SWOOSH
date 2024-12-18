@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_light"
+    android:padding="16dp"
+    tools:context=".EarningsActivity">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_profile"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/circle_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, David Friedman"
+            android:textSize="20sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+
+    <!-- Buttons and Spinner Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="space_between"
+        android:paddingBottom="16dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Daily"
+            android:background="@drawable/button_background"
+            android:textColor="@color/black"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Weekly"
+            android:background="@drawable/button_background"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:entries="@array/months"
+            android:background="@drawable/spinner_background"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Scrollable Calendar -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:background="@drawable/card_background">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Example of a Calendar Day -->
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="5"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:background="@drawable/circle_background"
+                android:layout_margin="8dp" />
+
+            <!-- Repeat for Other Days -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Earnings Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="16dp"
+        android:marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Earnings: RM 179.50"
+            android:textSize="24sp"
+
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 Jobs Completed"
+            android:textSize="16sp"
+           />
+    </LinearLayout>
+
+    <!-- Job List Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Example Job Item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:padding="8dp"
+
+                android:marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="03:06 am"
+                        android:textSize="14sp"
+                       />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gemu Sports "
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GrabPay"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RM 19.50"
+                    android:textSize="16sp"
+
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+
+            <!-- Repeat Job Item Layout for Other Jobs -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
